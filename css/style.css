@@ -1,0 +1,114 @@
+/************************************/
+/************** COLOR ***************/
+:root {
+    --primary-col: #0084fd;
+    --primary-col-light: #b5ddff;
+    --secondary-col: #9792e4;
+}
+
+.bg-white {
+    background-color: white;
+}
+.fg-white {
+    color: white;
+}
+.bg-black {
+    background-color: black;
+}
+.fg-black {
+    color: black;
+}
+
+.bg-primary {
+    background-color: var(--primary-col);
+}
+.fg-primary {
+    color: var(--primary-col);
+}
+/* .bg-primary-hover:hover {
+    background-color: var(--primary-col);
+}
+.fg-primary-hover:hover {
+    color: var(--primary-col);
+} */
+.bg-primary-light {
+    background-color: var(--primary-col-light);
+}
+.fg-primary-light {
+    color: var(--primary-col-light);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-col);
+}
+.fg-secondary {
+    color: var(--secondary-col);
+}
+
+
+/**************************/
+/****** MOBILE FIRST ******/
+
+/* GENERIC UI */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.navigation {
+    display: none;
+}
+
+/* MAIN CONTENT */
+.cardWrapper,
+.cardWrapperBig {
+    width: 100%;
+}
+
+/********************************/
+/****** RESPONSIVE: TABLET ******/
+@media screen and (min-width: 768px) {
+    /* GENERIC UI */
+    .container {
+        max-width: 800px;
+    }
+
+    /* MAIN CONTENT */
+    .cardWrapper {
+        width: calc(100% / 3);
+    }
+
+    .cardWrapperBig {
+        width: calc(100% / 3 * 2);
+    }
+}
+
+/*********************************/
+/****** RESPONSIVE: DESKTOP ******/
+@media screen and (min-width: 992px) {
+    /* GENERIC UI */
+    .container {
+        max-width: 1000px;
+    }
+
+    /* HEADER */
+    .navigation {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+
+/***************************************/
+/****** RESPONSIVE: LARGE DESKTOP ******/
+@media screen and (min-width: 1201px) {
+    /* GENERIC UI */
+    .container {
+        max-width: 1300px;
+    }
+}
