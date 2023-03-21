@@ -1,0 +1,33 @@
+/********* MEDIA QUERIES *********/
+/* MOBILE FIRST */
+body.debug {
+    background: red;
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body.debug {
+        background: orange;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body.debug {
+        background: yellow;
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body.debug {
+        background: greenyellow;
+    }
+}
+
+/* EXTRA-LARGE DESKTOP */
+@media screen and (min-width: 1201px) {
+    body.debug {
+        background: green;
+    }
+}
