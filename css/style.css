@@ -50,10 +50,7 @@
 /****** MOBILE FIRST ******/
 
 /* GENERIC UI */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
+
 
 /* HEADER */
 .navigation {
@@ -61,37 +58,25 @@
 }
 
 /* MAIN CONTENT */
-.cardWrapper,
-.cardWrapperBig {
-    width: 100%;
+#stategic-planning .card {
+    margin-bottom: 2rem;
 }
 
 /********************************/
 /****** RESPONSIVE: TABLET ******/
 @media screen and (min-width: 768px) {
+
     /* GENERIC UI */
-    .container {
-        max-width: 800px;
-    }
+
+    /* HEADER */
 
     /* MAIN CONTENT */
-    .cardWrapper {
-        width: calc(100% / 3);
-    }
 
-    .cardWrapperBig {
-        width: calc(100% / 3 * 2);
-    }
 }
 
 /*********************************/
 /****** RESPONSIVE: DESKTOP ******/
 @media screen and (min-width: 992px) {
-    /* GENERIC UI */
-    .container {
-        max-width: 1000px;
-    }
-
     /* HEADER */
     .navigation {
         display: block;
@@ -101,14 +86,19 @@
         display: none;
     }
 
+    #stategic-planning .card {
+        margin-bottom: 0rem;
+    }
 }
 
 
 /***************************************/
 /****** RESPONSIVE: LARGE DESKTOP ******/
 @media screen and (min-width: 1201px) {
+    
     /* GENERIC UI */
-    .container {
-        max-width: 1300px;
-    }
+
+    /* HEADER */
+
+    /* MAIN CONTENT */
 }
